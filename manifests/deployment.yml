@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: anildesaisunbirdtelemetryservice 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anildesaisunbirdtelemetryservice
+  template:
+    metadata:
+      labels:
+        app: anildesaisunbirdtelemetryservice 
+    spec:
+      containers:
+        - name: anildesaisunbirdtelemetryservice 
+          image: tesfrt.azurecr.io/anildesaisunbirdtelemetryservice
+          ports:
+          - containerPort: 80
