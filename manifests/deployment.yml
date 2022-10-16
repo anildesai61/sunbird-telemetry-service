@@ -16,4 +16,4 @@ spec:
         - name: anildesaisunbirdtelemetryservice 
           image: tesfrt.azurecr.io/anildesaisunbirdtelemetryservice
           ports:
-          - containerPort: 80
+          - containerPort: 9001
